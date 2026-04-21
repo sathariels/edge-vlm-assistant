@@ -1,0 +1,33 @@
+# Inference
+mlx-vlm>=0.1.0
+faster-whisper>=1.0.0
+piper-tts>=1.2.0
+silero-vad>=5.1.2
+
+# Vision / Audio I/O
+opencv-python>=4.9.0
+sounddevice>=0.4.6
+numpy>=1.26.0
+
+# ML backend (Apple Silicon)
+torch>=2.2.0
+
+# API bridge (Phase 2)
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+websockets>=12.0
+
+# Phase 3 — performance
+uvloop>=0.19.0           # drop-in faster asyncio event loop for server
+
+# Phase 3 — OCR + translation
+paddlepaddle>=2.6.0      # PaddleOCR backend (CPU build; pip install paddlepaddle)
+paddleocr>=2.7.0         # OCR model wrapper
+transformers>=4.40.0     # MarianMT for es→en translation
+
+# Observability
+structlog>=24.1.0
+
+# Dev tooling
+ruff>=0.4.0
+mypy>=1.9.0
